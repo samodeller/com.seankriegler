@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[MatchLineUp](
+[MatchId] BIGINT NOT NULL,
+[PlayerId] UNIQUEIDENTIFIER NOT NULL)
+GO
