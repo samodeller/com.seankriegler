@@ -65,6 +65,7 @@
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo\User Defined Types" />
     <Folder Include="dbo\Views" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Position.sql" />
@@ -84,5 +85,8 @@
     <Build Include="dbo\Tables\Club.sql" />
     <Build Include="dbo\Tables\Stadium.sql" />
     <Build Include="dbo\Tables\CoachDetails.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\SeedValues.sql" />
   </ItemGroup>
 </Project>
