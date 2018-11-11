@@ -25,6 +25,60 @@ namespace com.seankriegler.stats.Api.Controllers
             return "value";
         }
 
+        /// <summary>
+        /// Get Hat-Trick count by player for all matches they have played
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}", Name = "Get")]
+        public string GetHatTrickCount(int id)
+        {
+            return "value";
+        }
+
+        /// <summary>
+        ///  Goal average means the number of goals scored divided by the number of goals conceded
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}", Name = "Get")]
+        public string GetGoalAverage(int id)
+        {
+            return "value";
+        }
+
+        // GET: api/Statistic/5
+        /// <summary>
+        ///  Save percentage is a statistic in soccer (as well as ice hockey, field hockey, lacrosse,
+        /// water polo, and other sports with a goalie) that is used to put a goalie’s number of saves
+        /// comparison with the number of shots they have faced.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}", Name = "Get")]
+        public string GetSavePercentage(int id)
+        {
+            // Save Percentage = saves/shots against.
+            // https://captaincalculator.com/sports/soccer/save-percentage-calculator/
+            return "value";
+        }
+
+        // GET: api/Statistic/5
+        /// <summary>
+        /// Shooting percentage is a statistic used in soccer (as well as ice hockey, field hockey,
+        /// lacrosse, water polo and other sports with a goalie) that is used to put a player’s
+        /// number of goals made in comparison with their total shots made.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}", Name = "Get")]
+        public string GetShootingPercentage(int id)
+        {
+            // Shooting Percentage = goals scored / shots on goal taken.
+            // https://captaincalculator.com/sports/soccer/save-percentage-calculator/
+            return "value";
+        }
+
         // POST: api/Player
         [HttpPost]
         public void Post([FromBody] string value)
